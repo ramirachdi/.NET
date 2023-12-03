@@ -1,0 +1,6 @@
+﻿@model IEnumerable<TP3.Models.Movie>
+<h2>Movies :</h2>
+@foreach (var item in Model)
+{
+    <h2>@Html.ActionLink(item.Name,"Details", new {Id=item.Id})</h2>
+}
